@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muthu Sundar</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <style>
+        div {
+            display: block;
+        }
+
+        img[alt="profile-img"] {
+            margin-top: 6%;
+            width: 150px;
+            /* Set width */
+            height: 150px;
+            /* Set height (same as width for circle) */
+            border-radius: 50%;
+            /* Makes it round */
+            object-fit: cover;
+            border: 0%;
+            margin-bottom: 3%;
+        }
+
+        h2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #0081cc;
+            font-size: 2rem;
+            font-weight: normal;
+            padding-bottom: 10px;
+
+        }
+
+        hr {
+            border: dotted #99D3ED 6px;
+            border-bottom: none;
+            width: 4%;
+            margin: 80px auto;
+        }
+
+        p {
+            line-height: 2;
+        }
+
+        h5 {
+            color: #0081cc;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 550;
+        }
+
+        a {
+            color: #0081cc;
+            font-family: "Montserrat", sans-serif;
+            margin: 10px 20px;
+            text-decoration: none;
+            margin-left: 0%;
+        }
+
+        body {
+            text-align: center;
+        }
+
+        .intro {
+            width: 50%;
+            margin: auto;
+            padding: 0%;
+        }
+
+        .parent {
+            display: grid;
+            grid-template-columns: 0.5fr 1fr;
+            grid-template-rows: repeat(1, 1fr);
+            width: 70%;
+            margin: 100px auto 0 auto;
+            text-align: left;
+            row-gap: 2rem;
+        }
+
+        .bottom-container {
+            background-color: #99D3ED;
+            padding: 50px 0 20px;
+            margin-top: 5%;
+        }
+
+        @media (max-width: 850px) {
+
+            .parent {
+                grid-template-columns: 1fr;
+                /* Stack items vertically */
+                text-align: left;
+                width: 50%;
+            }
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="hero">
+        <div class="hero-container">
+            <img src="./images/I' m Muthu Sundar.jpg" alt="background-img" height="auto" width="100%">
+        </div>
+    </section>
+
+    <section id="profile">
+        <div class="profile-container">
+            <img src="./images/Muthu_Profile.jpg" alt="profile-img">
+            <h2>Hello.</h2>
+            <p class="intro">Senior Test Engineer | Transitioning into Full-Stack Development. Outside of tech, I love
+                exploring new snacks — they’re my favorite coding companion!
+            </p>
+            <hr>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="skills-container">
+            <h2>My Skills</h2>
+            <div class="parent">
+                <div class="typing">
+                    <img src="./gifs/Programmer.gif" alt="programming gifs" height="250" width="250">
+                </div>
+                <div class="coding">
+                    <h5>Design & Development</h5>
+                    <p>Recently, I've developed a growing passion for Full-Stack Development and have been actively
+                        learning modern web technologies to expand my skill set. I’m constantly learning and love
+                        turning ideas into
+                        real, functional products.</p>
+                </div>
+                <div class="tester">
+                    <img src="./gifs/Testing.gif" alt="testing gifs" height="230" width="250">
+                </div>
+                <div class="testing">
+                    <h5>Test Automation Specialist</h5>
+                    <p>Senior Test Engineer with over 3+ years of experience in software testing, quality assurance, and
+                        test automation. Known for a strong analytical mindset, attention to detail, and a
+                        results-driven approach to ensuring high-quality software releases.</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </section>
+
+    <section id="project">
+        <h2>Project Experience</h2>
+        <div class="container">
+            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="4000">
+                        <a href="./course-projects/TinDog Project/index.html" target="_blank"> <img
+                                src="./images/TinyDog.png" height="100%" width="100%" class="d-block w-100"
+                                alt="tiny project img"></a>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <a href="./course-projects/Web Design Agency Project/index.html" target="_blank"> <img
+                                src="./images/DemoProject.png" height="100%" width="100%" class="d-block w-100"
+                                alt="tiny project img"></a>
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <hr>
+    </section>
+
+    <section id="contact-me">
+        <div class="contact-contanier">
+            <h2>Get In Touch</h2>
+            <p class="contact-message">"I’m open to collaboration, feedback, or just a chat about web development. Feel
+                free to get in touch with me!"</p>
+            <a href="./course-projects/public/contact.html" class="contact-button" target="_blank">CONTACT ME</a>
+        </div>
+    </section>
+    <section id="footer">
+        <div class="bottom-container">
+            <a class="footer-link" href="mailto: muthusundar044@gmail.com" target="_blank">Gmail</a>
+            <a class="footer-link" href="https://www.linkedin.com/in/muthusundar-g" target="_blank">Linkedin</a>
+            <a class="footer-link" href="https://github.com/Muthusundar27" target="_blank">Github</a>
+            <p class="copyright">Copyright © 2025 Muthu Sundar.</p>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
